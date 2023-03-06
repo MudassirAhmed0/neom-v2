@@ -54,7 +54,7 @@
 </head>
 <body>
     <div class="fixed right-[-2.34375vw] top-[15.390625vw] rotate-[-90deg] z-[11] md:block hidden">
-       <a href=""
+       <a href="./helpandsupport.html"
             class="md:w-[6.92708333333vw] md:h-[2.23958333333vw] flex items-center justify-center text-[#FFFFFF] bg-[#000000] rounded-tl-[1.09375vw] rounded-tr-[1.14583333333vw] leading-[1.14583333333vw] md:text-[0.9375vw] font-[300] hover:bg-[#B89535] transition-all duration-500">FEEDBACK</a>
     </div>
     <div class="hidden pointer-events-none	  w-full h-[100vh]  
@@ -282,7 +282,8 @@ pt-[2.60416666667vw]  z-[13]
         <h4 class="md:text-[2.03125vw] md:leading-[2.76041666667vw]
                 tracking-[7.8px]  text-[#000000] text-center
                 ">OUR STATS</h4>
-                <div class="flex justify-between">
+                <div class="flex justify-between relative items-center">
+                    
 <div class="flex flex-col items-center gap-y-[1.31979166667vw]">
     <svg class="w-[1.49583333333vw] h-[1.77916666667vw] object-contain" xmlns="http://www.w3.org/2000/svg" width="29.717" height="35.156" viewBox="0 0 29.717 35.156">
         <g id="flag" transform="translate(0.5 0.5)">
@@ -302,7 +303,7 @@ pt-[2.60416666667vw]  z-[13]
       </div>
 </div>
 <div>
-    <img src="" alt="" class="w-[2.06145833333vw] h-[0.40625vw] object-contain">
+    <img src="./assests/images/lifeatneom/vector.png" alt="Vector" class="w-[2.06145833333vw] ">
 </div>
 <div class="flex flex-col items-center gap-y-[1.31979166667vw]">
     <svg class="w-[1.97604166667vw] h-[1.72708333333vw] object-contain" xmlns="http://www.w3.org/2000/svg" width="38.454" height="33.661" viewBox="0 0 38.454 33.661">
@@ -325,7 +326,8 @@ pt-[2.60416666667vw]  z-[13]
       </div>
 </div>
 <div>
-    <img src="" alt="" class="w-[2.06145833333vw] h-[0.40625vw] object-contain">
+    <img src="./assests/images/lifeatneom/vector.png" alt="Vector" class="w-[2.06145833333vw] ">
+    
 </div>
 <div class="flex flex-col items-center gap-y-[1.31979166667vw]">
     <svg class="w-[2.1359375vw] h-[2.13697916667vw] object-contain" id="people" xmlns="http://www.w3.org/2000/svg" width="41.009" height="41.028" viewBox="0 0 41.009 41.028">
@@ -341,7 +343,8 @@ pt-[2.60416666667vw]  z-[13]
       </div>
 </div>
 <div>
-    <img src="" alt="" class="w-[2.06145833333vw] h-[0.40625vw] object-contain">
+    <img src="./assests/images/lifeatneom/vector.png" alt="Vector" class="w-[2.06145833333vw] ">
+ 
 </div>
 <div class="flex flex-col items-center gap-y-[1.31979166667vw]">
     <svg class="w-[1.70520833333vw] h-[2.13697916667vw] object-contain" id="family" xmlns="http://www.w3.org/2000/svg" width="32.737" height="41.028" viewBox="0 0 32.737 41.028">
@@ -370,7 +373,7 @@ pt-[2.60416666667vw]  z-[13]
         <h4 class="md:text-[2.03125vw] md:leading-[2.76041666667vw]
         tracking-[7.8px]  text-[#000000] text-center
         ">FROM COMMUNITY</h4>
-        <div class="swiper mySwiper">
+        <div class="swiper testimonialSwiper">
             <div class="swiper-wrapper mt-[2.60416666667vw] w-[50.46875vw] h-[22.7083333333vw] mx-[auto]  relative">
               <div class="swiper-slide  ">
                 <div class="w-[47.2395833333vw] bg-[#F9F7F2] 
@@ -430,9 +433,18 @@ font-[300] text-[#000000]
               
               
             </div>
-            <div class="swiper-button-next"></div>
-            <div class="swiper-button-prev"></div>
-            <div class="swiper-pagination"></div>
+            <div class="swiper-button-next">  <svg  id="open-values" class=" cursor-pointer ml-[8px] inline-block"
+                xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+                <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
+                    transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
+                    stroke-width="1.5"></path>
+            </svg></div>
+            <div class="swiper-button-prev">  <svg  id="open-values" class=" cursor-pointer ml-[8px] inline-block"
+                xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+                <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
+                    transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
+                    stroke-width="1.5"></path>
+            </svg></div> 
           </div>
     </div>
     
@@ -522,9 +534,11 @@ font-[300] text-[#000000]
     <script src="./assests/js/index.js"></script>
     <script src="./assests/js/tabs.js"></script>
     <script>
-        var swiper1 = new Swiper(".mySwiper", {
+        var swiper1 = new Swiper(".testimonialSwiper", {
           cssMode: true,
           slidesPerView: 1,
+          
+       
           navigation: {
             nextEl: ".swiper-button-next",
             prevEl: ".swiper-button-prev",

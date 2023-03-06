@@ -83,7 +83,7 @@ height: 0.71979166666vw;
     color: #000000;
 }
 .Container .cntent-side .Entertainment{
-    margin-top: 1.875vw;
+    margin-top: .875vw;
 }
  .Container .cntent-side .Entertainment{
 display: flex;
@@ -297,6 +297,10 @@ cursor: pointer;
     background-color: #000000;
     color:#FFFFFF;
      
+}
+.pagination .numbers-pag div.active{
+    background-color: #000;
+    color: #Fff;
 }
  
 .pagination .left-arr-pag:hover.left-arr-pag svg path,
@@ -1036,12 +1040,13 @@ opacity: 1;
     visibility:visible;
 }
 .newsSwiper .swiper-button-next,.newsSwiper .swiper-button-prev{
-    width: 2.34375vw;
-    height: 2.34375vw;
-    background-color: rgba(0,0,0,0.4);
+    width: 3.22916666667vw;
+    height: 3.22916666667vw;
+    background-color: rgba(0,0,0,0.6);
     top: 14.5vw;
     bottom: unset;
     transform: translateY(-50%);
+    border-radius: 50%;
 }
 .newsSwiper .swiper-button-next{
     left: unset;
@@ -1075,7 +1080,67 @@ input::-webkit-inner-spin-button {
 input[type=number] {
   -moz-appearance: textfield;
 }
+.ncac-overlay{
+    background: transparent linear-gradient(180deg, #00000000 0%, #00000000 55%, var(--unnamed-color-000000) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #00000000 0%, #00000000 55%, #000000 100%) 0% 0% no-repeat padding-box;
+ 
+}
+.teamOverlay{
+    background: #000000 0% 0% no-repeat padding-box; 
+opacity: 0.47;
+transition: all .8s;
+}
 
+.active.teamSlide{
+max-height: 27.1354166667vw;
+min-width: 18.2291666667vw;
+}
+.active .teamContent{
+    z-index: 5;
+
+}
+.teamPrevBtn,.teamNextBtn{
+    width: 3.22916666667vw ;
+    height: 3.22916666667vw ;
+    border-radius: 50%;
+    position: relative;
+    overflow: hidden;
+}
+.teamPrevBtn span,.teamNextBtn span{
+    background-color: #000;
+    position:absolute;
+    width: 100%;
+    height: 100%;
+    top:0;
+    left:0;
+    opacity: 0.6;
+    transition: all .8s;
+
+}
+.teamCarousel button.disable span{
+    opacity: 0.2;
+}
+.teamCarousel button.disable path{
+    stroke: #000
+}
+.teamCarousel button:hover:not(.disable) span{
+    opacity: 1;
+}
+.teamPrevBtn,.teamNextBtn{
+transition: all .8s;
+}
+.teamPrevBtn svg path,.teamNextBtn svg path{
+    transition: all .8s;
+    z-index: 5;
+    position: relative;
+}
+.teamPrevBtn{
+    transform: rotate(180deg);
+}
+.active .teamOverlay{
+    background: transparent linear-gradient(180deg, #00000000 0%, #00000000 55%, var(--unnamed-color-000000) 100%) 0% 0% no-repeat padding-box;
+background: transparent linear-gradient(180deg, #00000000 0%, #00000000 55%, #000000 100%) 0% 0% no-repeat padding-box;
+}
 .error.active{
     display: block;
 }
@@ -1147,35 +1212,46 @@ input[type=number] {
   
 
 
-  .swiper-css-mode>.swiper-wrapper>.swiper-slide{
+  .testimonialSwiper.swiper-css-mode>.swiper-wrapper>.swiper-slide{
 display: flex !important;
 align-items: end !important;
-width: 50.46875vw !important;
+width: 50.45875vw !important;
 height: 24.6875vw !important;
 
   }
   
-  .swiper-horizontal.swiper-css-mode>.swiper-wrapper{
-    width: 50.46875vw !important;
+  .testimonialSwiper.swiper-horizontal.swiper-css-mode>.swiper-wrapper{
+    width: 50.45875vw !important;
     height: 24.6875vw !important;
 
   }
-  .swiper-button-next:after{
-    content: url(../images/lifeatneom/formcm/right.svg) !important;
-    /* width: 0.46875vw !important; */
-    /* height: 0.8854166666666667vw !important; */
-  }
-  .swiper-button-prev:after{
-    content: url(../images/lifeatneom/formcm/left.svg) !important;
-  }
-   
-  .swiper-button-next,.swiper-button-next.swiper-button-disabled, .swiper-button-prev.swiper-button-disabled,.swiper-button-prev, .swiper-rtl .swiper-button-next {
+  
+   .testimonialSwiper .swiper-button-prev svg{
+    width: 1.30208333333vw;
+    height: auto;
+    transform: rotate(90deg) translateY(0.26041666666vw);
+   }
+   .testimonialSwiper .swiper-button-next svg{
+    width: 1.30208333333vw;
+    height: auto;
+    transform: rotate(-90deg)    ;
+   }
+ .testimonialSwiper .swiper-button-next,.testimonialSwiper .swiper-button-next.swiper-button-disabled,.testimonialSwiper .swiper-button-prev.swiper-button-disabled,.testimonialSwiper .swiper-button-prev,.testimonialSwiper .swiper-rtl .swiper-button-next {
     width: 3.229166666666667vw !important;
     height: 3.229166666666667vw !important;
     border-radius: 100px !important;
     overflow: hidden !important;
   }
-  .swiper-button-next::before,.swiper-button-prev::before{
+  .testimonialSwiper .swiper-button-next{
+    right: 18.3854166667vw;
+  }
+  .testimonialSwiper .swiper-button-prev{
+    left: 18.3854166667vw;
+  }
+  .testimonialSwiper .swiper-button-next::after,.testimonialSwiper .swiper-button-prev::after{
+    display: none;
+  }
+  .testimonialSwiper .swiper-button-next::before,.testimonialSwiper .swiper-button-prev::before{
 content: "" !important;
 width: 100% !important;
 height: 100% !important;
@@ -1186,9 +1262,16 @@ left: 0 !important;
     opacity: 0.6 !important;
 
   }
+.objectCover{
+    object-fit: cover!important;
+}
 
-
-
+.testimonialSwiper .swiper-button-prev svg path,.testimonialSwiper .swiper-button-next svg path{
+    stroke: #fff;
+}
+.testimonialSwiper .swiper-button-disabled svg path{
+    stroke:#000;
+}
 
 
 
