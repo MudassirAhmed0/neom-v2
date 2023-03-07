@@ -15,10 +15,12 @@
     top-[0px] left-[0px] z-[13]
     "></span>
        <div class="w-[36.25vw]  relative 
-bg-[#FFFFFF] rounded-[15px] border-[1px] border-[#707070]
+bg-[#FFFFFF] rounded-[15px] border-[1px] border-[#878787]
 pt-[2.60416666667vw]  z-[13]
 ">
+<img src="" alt="Close" class="w-[1.05vw] h-[1.05vw] absolute top-[1.5vw] right-[1.5vw]" onclick="closeWeatherModal()">
            <div class="w-[31.0416666667vw] mx-[auto] ">
+
                <h3 class="text-[2.03125vw] leading-[2.76041666667vw]
    text-[#000000] tracking-[0.40625vw] uppercase
    ">
@@ -29,11 +31,11 @@ pt-[2.60416666667vw]  z-[13]
                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500]">Select Community</h4>
                        <div class="relative w-full">
                            <div
-                           class="h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[1.5625vw] flex justify-between items-center ">
+                           class="h-[2.60416666667vw] w-full border-[0.5px] border-[#878787] rounded-[0.5vw] px-[1.5625vw] flex justify-between items-center ">
                                                 <span   class="dropdownValue text-[0.9375vw]
                         leading-[1.30208333333vw] text-[#878787]   outline-none
                         ">All </span>
-                           <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] inline-block"
+                           <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
                                xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
                                <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
                                    transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
@@ -42,11 +44,11 @@ pt-[2.60416666667vw]  z-[13]
                            
    
                             </div>
-                            <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[8px] max-h-[0px] overflow-hidden dropdownShadow ">
+                            <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[0.5vw] max-h-[0px] overflow-hidden dropdownShadow ">
                                <li class="text-[0.9375vw]
-                               leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Community 1</li> 
+                               leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Community 1</li> 
                                <li class="text-[0.9375vw]
-                               leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Community 2</li> 
+                               leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Community 2</li> 
                                <li class="text-[0.9375vw]
                                leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Community 3</li> 
                             </ul>
@@ -57,11 +59,11 @@ pt-[2.60416666667vw]  z-[13]
                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500]">Select Unity Type</h4>
                        <div class="relative w-full">
                         <div
-                        class="h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[1.5625vw] flex justify-between items-center ">
+                        class="h-[2.60416666667vw] w-full border-[0.5px] border-[#878787] rounded-[0.5vw] px-[1.5625vw] flex justify-between items-center ">
                                              <span   class="dropdownValue text-[0.9375vw]
                      leading-[1.30208333333vw] text-[#878787]   outline-none
                      ">All </span>
-                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] inline-block"
+                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
                             xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
                             <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
                                 transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
@@ -70,11 +72,11 @@ pt-[2.60416666667vw]  z-[13]
                         
 
                          </div>
-                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[8px] max-h-[0px] overflow-hidden dropdownShadow ">
+                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList   bg-white z-[5] rounded-[0.5vw] max-h-[0px] overflow-hidden dropdownShadow ">
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 1</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 1</li> 
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 2</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 2</li> 
                             <li class="text-[0.9375vw]
                             leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]">Unit 3</li> 
                          </ul>
@@ -85,11 +87,11 @@ pt-[2.60416666667vw]  z-[13]
                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500]">Enter Unit Number</h4>
                        <div class="relative w-full">
                         <div
-                        class="h-[2.60416666667vw] w-full border-[0.5px] border-[#707070] rounded-[7px] px-[1.5625vw] flex justify-between items-center ">
+                        class="h-[2.60416666667vw] w-full border-[0.5px] border-[#878787] rounded-[0.5vw] px-[1.5625vw] flex justify-between items-center ">
                                              <span   class="dropdownValue text-[0.9375vw]
                      leading-[1.30208333333vw] text-[#878787]   outline-none
                      ">Ex: 9 </span>
-                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] inline-block"
+                        <svg onclick="openDropdown(this)"  id="open-values" class=" cursor-pointer ml-[8px] transform transition-all duration-500 inline-block"
                             xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
                             <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581"
                                 transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000"
@@ -98,25 +100,25 @@ pt-[2.60416666667vw]  z-[13]
                         
 
                          </div>
-                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList  overflow-scroll  bg-white z-[5] rounded-[8px] max-h-[0px] overflow-hidden dropdownShadow ">
+                         <ul class="absolute top-[100%] left-0 w-full transition-all duration-500  dropdownList  overflow-scroll  bg-white z-[5] rounded-[0.5vw] max-h-[0px] overflow-hidden dropdownShadow ">
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 1</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 1</li> 
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 2</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 2</li> 
                             <li class="text-[0.9375vw]
                             leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 3</li> 
                        
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 4</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 4</li> 
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 5</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 5</li> 
                             <li class="text-[0.9375vw]
                             leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 6</li> 
                        
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 7</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 7</li> 
                             <li class="text-[0.9375vw]
-                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787] border-b cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 8</li> 
+                            leading-[1.30208333333vw] py-[0.6vw] text-[#878787]  cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 8</li> 
                             <li class="text-[0.9375vw]
                             leading-[1.30208333333vw] py-[0.6vw] text-[#878787] cursor-pointer hover:opacity-[0.8] hover:bg-[#F9F7F2] py-[1vw] px-[1.5625vw]"> 9</li> 
                        

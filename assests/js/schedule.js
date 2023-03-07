@@ -1,4 +1,4 @@
-const scheduleDropdown =(selected)=>{
+const openScheduleDropdown =(selected)=>{
     let dropDown =
     selected.parentElement.parentElement.querySelector('ul')
     
@@ -14,3 +14,17 @@ const closeScheduleDropdown =(selected)=>{
     dropDown.classList.remove('max-h-[300px]')
 }
 
+
+
+
+const scheduleDropdownLists = document.querySelectorAll('.scheduleDropdownList')
+const changeScheduleDropdownValue=(selectedList,text)=>{
+    selectedList.parentElement.parentElement.querySelector('.dropdownValue').innerText = text
+    closeScheduleDropdown(selectedList)
+
+}
+scheduleDropdownLists.forEach(scheduleDropdownList=>{
+    scheduleDropdownList.querySelectorAll('li').forEach(listItem=>{
+        listItem.addEventListener('click',()=> changeScheduleDropdownValue (scheduleDropdownList,listItem.innerText))
+    })
+})

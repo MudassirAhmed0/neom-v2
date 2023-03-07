@@ -329,14 +329,21 @@ tracking-[7.8px]  text-[#000000]
          <div class="md:w-[59.375vw] tabs-content">
             <div id="step1" class="content live tips flex flex-col gap-y-[1.58854166667vw]">
         <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Tips  Guidelines</h5>
-        <a href="" class="relative date-time py-[1.25vw] pl-[1.5625vw] pr-[3.125vw] rounded-[15px] flex justify-between">
-            <span class="button md:leading-[1.71875vw] text-[#000000] md:text-[1.25vw] capitalize flex w-full justify-between ">Additional Educational Resources<span href="" class="flex items-center gap-x-[0.83333333333vw] j
-                text-[#B89535]
-                ">VIEW PDF
-                    <img src="./assests/images/icon/download.svg" alt="Download" class="md:w-[1.04166666667vw] md:h-[1.04166666667vw]">
-                </span>
-                </span>
-        </a>
+        <div class="flex flex-col gap-y-[10px]">
+            <a href="" class="relative date-time py-[1.25vw] pl-[1.5625vw] pr-[3.125vw] rounded-[15px] flex justify-between">
+                <span class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw] capitalize flex w-full justify-between ">Additional Educational Resources
+                    
+                    
+                    <span href="" class="flex items-center gap-x-[0.83333333333vw] j
+                    text-[#B89535]
+                    ">VIEW PDF
+                        <img src="./assests/images/icon/download.svg" alt="Download" class="md:w-[1.04166666667vw] md:h-[1.04166666667vw]">
+                    </span>
+                    </span>
+            </a>
+            
+
+        </div>
         
             </div>
             <div id="step2" class="content  flex flex-col gap-y-[1.5625vw]">
@@ -706,27 +713,61 @@ text-[#B89535] hover:text-[#000000] transition-all duration-500
                 
                     </div>
             <div id="step8" class="content  ">
-                <div>
+                <div class="galleryOuterSection">
                     <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Photo/Video Gallery</h5>
-                   <div>
-                    <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[18.90625vw] h-[17.1875vw]  mt-[1.5625vw]">
-                    <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[1.09375vw]">Album Name</h4>
-                    <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
-                        <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
-                            <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" opacity="0.5">
-                              <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                              <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                              <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                              <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                            </g>
-                          </svg>
-                          
-                        <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
-                    </div>
-                   </div>
+                  <div class="flex justify-between w-[59.375vw]">
+                    <div class="cursor-pointer" onclick="openGallery()">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                                <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
+                                  <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                </g>
+                              </svg>
+                              
+                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                        </div>
+                       </div>
+                    <div class="cursor-pointer" onclick="openGallery()">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                                <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
+                                  <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                </g>
+                              </svg>
+                              
+                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                        </div>
+                       </div>
+                    <div class="cursor-pointer" onclick="openGallery()">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                                <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
+                                  <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                  <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                                </g>
+                              </svg>
+                              
+                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                        </div>
+                       </div>
+                  </div>
                 </div>
-<div class="flex flex-col gap-y-[1.5625vw] hidden">
-    <div>
+<div  class="flex flex-col gap-y-[1.5625vw] hidden galleryInnerSection">
+    <div class="cursor-pointer " onclick="closeGallery()">
    
         <span class=""> <svg id="service" class="w-[8px] h-[14px] transform rotate-[90deg] cursor-pointer ml-[8px] inline-block" xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
             <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581" transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000" stroke-width="1.5"></path>
@@ -737,14 +778,14 @@ text-[#B89535] hover:text-[#000000] transition-all duration-500
          </span>
     </div>
     <div class="flex justify-between items-center">
-        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw] text-[#000000]"> Additional Educational Resources</h5>
+        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw] text-[#000000]">Album Name 1</h5>
         <div class="flex gap-x-[0.8vw]">
             <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
-                <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" opacity="0.5">
-                  <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                  <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                  <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
-                  <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#000" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"/>
+                <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
+                  <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                  <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                  <path id="Path_11187" data-name="Path 11187" d="M12,3V5.763" transform="translate(-8.546 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
+                  <path id="Path_11188" data-name="Path 11188" d="M4.5,15H16.934" transform="translate(-4.5 -9.474)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                 </g>
               </svg>
               
@@ -753,7 +794,7 @@ text-[#B89535] hover:text-[#000000] transition-all duration-500
     </div>
 
 <div class="  flex  flex-wrap gap-y-[0.9375vw]">
-<a data-fslightbox href="./assests/images/accomodation/service detail/photo-gallery/1.jpg" class="w-full ">
+<a data-fslightbox="" href="./assests/images/accomodation/service detail/photo-gallery/1.jpg" class="w-full ">
     <img id="mainImg" src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full md:h-[26.0416666667vw]
     rounded-[15px]
     ">
@@ -1127,5 +1168,6 @@ text-[#B89535] hover:text-[#000000] transition-all duration-500
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
     <script src="./assests/js/index.js"></script>
     <script src="./assests/js/tabs.js"></script>
+    <script src="./assests/js/gallery.js"></script>
 </body>
 </html>

@@ -21,12 +21,12 @@ const closeWeatherModal=()=>{
 
 const closeDropdown =()=>{
     const dropdownList = document.querySelectorAll('.dropdownList')
-
     dropdownList.forEach(item=>{
-        item.classList.remove('max-h-[180px]')
+        item.classList.remove('max-h-[220px]')
         item.classList.add('max-h-[0px]')
     })
     firstVisit = false
+    document.querySelectorAll('svg').forEach(icon=>icon.classList.contains('rotate-[180deg]') &&  icon.classList.remove('rotate-[180deg]'))
 }
 
   window.addEventListener("click",(e)=>{ 
@@ -34,11 +34,11 @@ const closeDropdown =()=>{
   })
 
   const openDropdown =(selected)=>{
-
+    selected.classList.add('rotate-[180deg]')
     let dropDown =
     selected.parentElement.parentElement.querySelector('ul')
     
-    dropDown.classList.add('max-h-[180px]')
+    dropDown.classList.add('max-h-[220px]')
     dropDown.classList.remove('max-h-[0px]')
 }
 let modalStep = 1
