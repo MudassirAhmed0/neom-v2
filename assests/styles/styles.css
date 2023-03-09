@@ -1292,9 +1292,15 @@ left: 0 !important;
     .myContainer{
         margin-left: unset;
     }
+    .movieAccordion.active .movies-date{
+        max-height: 72.96875vw !important;
+    }
     .swiper-pagination-bullet{
         width: 1.75vw;
         height: 1.75vw;
+    }
+    .side{
+        border-radius: 0;
     }
     .swiper-horizontal>.swiper-pagination-bullets, .swiper-pagination-bullets.swiper-pagination-horizontal, .swiper-pagination-custom, .swiper-pagination-fraction{
         bottom: 1.4vw;
