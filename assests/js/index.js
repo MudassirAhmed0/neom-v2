@@ -41,7 +41,7 @@ const swiper = new Swiper('.bannerSwiper', {
     
   });
 
-  const newsGap = window.innerWidth /100 * 1.35416666667
+  const newsGap = window.innerWidth > 768? window.innerWidth /100 * 1.35416666667  : window.innerWidth /100 * 3.84615384615
 const news = new Swiper('.newsSwiper', {
     // Optional parameters 
     autoHeight: false,
