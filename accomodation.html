@@ -72,7 +72,7 @@ pt-[2.60416666667vw]  z-[13]
    ">
                    UNIT SELECTION
                </h3>
-               <div class="mt-[3.125vw] flex flex-col gap-y-[1.5625vw]">
+               <div class="mt-[3.125vw] flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
                    <div class="flex flex-col gap-y-[0.72916666666vw]">
                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500]">Select Community</h4>
                        <div class="relative w-full">
@@ -251,10 +251,8 @@ justify-center md:justify-between md:ml-[auto]
             
          </div>
     </div>
-    <div class="pl-[7.29166666667vw] pb-[7.29166666667vw] pt-[6.25vw] flex flex-col gap-y-[1.30208333333vw]">
-        <h4 class="md:text-[2.03125vw] md:leading-[2.76041666667vw]
-tracking-[7.8px]  text-[#000000]
-">AMENITIES AND SERVICES</h4>
+    <div class="mx-[auto] md:mx-[unset] w-[86.16%] md:w-[unset] py-[72px] md:pl-[7.29166666667vw] md:pb-[7.29166666667vw] md:pt-[6.25vw] flex flex-col md:gap-y-[1.30208333333vw] gap-y-[24px]">
+        <h4 class="secondHeading">AMENITIES AND SERVICES</h4>
         <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]
 md:w-[65.5208333333vw] font-[300] text-[#000000]
 ">Overlooking the Red Sea, NEOM hosts a range of Two-bedroom, One-bedroom apartments, in different communities around
@@ -262,72 +260,85 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
             providing residents with an idyllic place to create their new home. All NEOM Community residential units
             come with the following appliances and furniture as standard</p>
     </div>
-    <section class="service-detail py-[6.25vw] pl-[7.29166666667vw]   bg-[#F9F7F2]">
+    <section class="py-[82px] service-detail md:py-[6.25vw] md:pl-[7.29166666667vw]   bg-[#F9F7F2]">
         <div class=" md:w-[85.4166666667vw]">
-        <h4 class="md:text-[2.03125vw] md:leading-[2.76041666667vw]
+        <h4 class="hidden md:block md:text-[2.03125vw] md:leading-[2.76041666667vw]
         tracking-[7.8px] opacity-[0.9]
-        ">SERVICES DETAILS</h4>
-        <div class="pb-[1.5625vw]  mt-[2.70833333333vw] flex justify-between tabs">
+        ">SERVICES DETAILS</h4><div class="cursor-pointer ml-[20px] block md:hidden" onclick="closeGallery()">
+   
+        <span class=""> <svg id="service" class="w-[8px] h-[14px] transform rotate-[90deg] cursor-pointer ml-[8px] inline-block" xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
+            <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581" transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000" stroke-width="1.5"></path>
+        </svg></span>
+        <span class="text-[14px] leading-[16px] md:pl-[0.62395833333vw] md:text-[0.9375vw] md:leading-[1.14583333333vw] text-[#000000]">
+            Back
+     
+         </span>
+    </div>
+        <div class="mt-[28px] md:pb-[1.5625vw]  md:mt-[2.70833333333vw] flex justify-between tabs flex-col md:flex-row">
          <div class=" md:w-[23.4375vw] h-full border-r-[0.5px] border-[#D1D1D1]
-         flex flex-col gap-y-[2.60416666667vw]
+         flex flex-col gap-y-[72px] md:gap-y-[2.60416666667vw]
          ">
-            <div class="py-[1.5625vw] relative date-time md:w-[20.8333333333vw] flex items-center   rounded-[15px] pl-[2.08333333333vw]
+            <div class="ml-[28px] md:ml-[unset] md:py-[1.5625vw] relative md:date-time 
+w-[85.865%] md:w-[20.8333333333vw] flex items-center   rounded-[15px] md:pl-[2.08333333333vw]
              
             ">
-                <div class="btn-container flex flex-col items-start relative    z-[3]    gap-y-[0.9375vw]">
-                    <button class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw] live" data-id="step1">Tips  Guidelines</button>
-                    <button class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step2">Unit Access Authorization</button>
-                    <button class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step4">Request During Occupancy</button>
-                    <button class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step5">Pets Application</button>
-                     <button class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step7">Photo/Video Gallery</button>
+                <div class="btn-container flex flex-col items-start relative    z-[3]    md:gap-y-[0.9375vw] gap-y-[16px]">
+                    <button class="text-[18px] leading-[25px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw] live" data-id="step1">Tips  Guidelines</button>
+                    <button class="text-[18px] leading-[25px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step2">Unit Access Authorization</button>
+                    <button class="text-[18px] leading-[25px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step4">Request During Occupancy</button>
+                    <button class="text-[18px] leading-[25px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step5">Pets Application</button>
+                     <button class="text-[18px] leading-[25px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw]" data-id="step7">Photo/Video Gallery</button>
                   </div>
             </div>
-            <div class="md:h-[15.2083333333vw] md:w-[20.8333333333vw] relative date-time flex justify-center items-center rounded-[15px]">
+            <div class="py-[32px] md:py-[unset] w-[85.865%] md:h-[15.2083333333vw] md:w-[20.8333333333vw] relative date-time flex justify-center items-center rounded-[15px] mx-[auto] md:mx-[unset]">
                 
                 <div class="relative z-[3] text-center
-                flex flex-col gap-y-[0.9375vw] items-center
+                flex flex-col gap-y-[9px] md:gap-y-[0.9375vw] items-center
                 
                 ">
-                    <h5 class="button md:leading-[1.71875vw] text-[#000000] md:text-[1.25vw]">Rate Our Service</h5>
-                    <p class="text-[#929191]  md:leading-[1.22395833333vw] w-[19.7916666667vw]  md:text-[0.9375vw] font-[300] ">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
-                    <div class="md:w-[11.225vw] md:h-[1.375vw] mt-[8.3px]   flex justify-between">
+                    <h5 class="button md:leading-[1.71875vw] text-[#000000] md:text-[1.25vw] text-[18px] leading-[25px]">Rate Our Service</h5>
+                    <p class="text-[#929191]  md:leading-[1.22395833333vw] md:w-[19.7916666667vw]  md:text-[0.9375vw]  font-[300] text-[14px] leading-[20px] w-[285px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam</p>
+                    <div class="md:w-[11.225vw] md:h-[1.375vw] 
+mt-[15px] md:mt-[8.3px]   flex justify-between w-[171.48px] h-[21.01px]">
                       
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star1" alt="stars" class="w-[1.44375vw] ratingStar active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star1" alt="stars" class="md:w-[1.44375vw] ratingStar active">
                             <path id="f35e3bcbde3528bceb03a6a775c06def" d="M-62.416,67.389c.986.7,7.314-3.75,8.526-3.76s7.611,4.341,8.586,3.622-1.317-8.1-.952-9.247,6.492-5.877,6.108-7.023-8.128-1.253-9.114-1.955-3.6-7.972-4.811-7.963-3.706,7.321-4.681,8.039-8.716.949-9.081,2.1,5.837,5.777,6.221,6.924S-63.4,66.687-62.416,67.389Z" transform="translate(67.851 -41.064)" fill="#fbe035"/>
                           </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star2" alt="stars" class="w-[1.44375vw] ratingStar active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star2" alt="stars" class="md:w-[1.44375vw] ratingStar active">
                             <path id="f35e3bcbde3528bceb03a6a775c06def" d="M-62.416,67.389c.986.7,7.314-3.75,8.526-3.76s7.611,4.341,8.586,3.622-1.317-8.1-.952-9.247,6.492-5.877,6.108-7.023-8.128-1.253-9.114-1.955-3.6-7.972-4.811-7.963-3.706,7.321-4.681,8.039-8.716.949-9.081,2.1,5.837,5.777,6.221,6.924S-63.4,66.687-62.416,67.389Z" transform="translate(67.851 -41.064)" fill="#fbe035"/>
                           </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star3" alt="stars" class="w-[1.44375vw] ratingStar active">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star3" alt="stars" class="md:w-[1.44375vw] ratingStar active">
                             <path id="f35e3bcbde3528bceb03a6a775c06def" d="M-62.416,67.389c.986.7,7.314-3.75,8.526-3.76s7.611,4.341,8.586,3.622-1.317-8.1-.952-9.247,6.492-5.877,6.108-7.023-8.128-1.253-9.114-1.955-3.6-7.972-4.811-7.963-3.706,7.321-4.681,8.039-8.716.949-9.081,2.1,5.837,5.777,6.221,6.924S-63.4,66.687-62.416,67.389Z" transform="translate(67.851 -41.064)" fill="#fbe035"/>
                           </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star4" alt="stars" class="w-[1.44375vw] ratingStar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star4" alt="stars" class="md:w-[1.44375vw] ratingStar">
                             <path id="f35e3bcbde3528bceb03a6a775c06def" d="M-62.416,67.389c.986.7,7.314-3.75,8.526-3.76s7.611,4.341,8.586,3.622-1.317-8.1-.952-9.247,6.492-5.877,6.108-7.023-8.128-1.253-9.114-1.955-3.6-7.972-4.811-7.963-3.706,7.321-4.681,8.039-8.716.949-9.081,2.1,5.837,5.777,6.221,6.924S-63.4,66.687-62.416,67.389Z" transform="translate(67.851 -41.064)" fill="#fbe035"/>
                           </svg>
-                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star5" alt="stars" class="w-[1.44375vw] ratingStar">
+                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 27.72 26.401" id="star5" alt="stars" class="md:w-[1.44375vw] ratingStar">
                             <path id="f35e3bcbde3528bceb03a6a775c06def" d="M-62.416,67.389c.986.7,7.314-3.75,8.526-3.76s7.611,4.341,8.586,3.622-1.317-8.1-.952-9.247,6.492-5.877,6.108-7.023-8.128-1.253-9.114-1.955-3.6-7.972-4.811-7.963-3.706,7.321-4.681,8.039-8.716.949-9.081,2.1,5.837,5.777,6.221,6.924S-63.4,66.687-62.416,67.389Z" transform="translate(67.851 -41.064)" fill="#fbe035"/>
                           </svg>
                           
                     </div>
                    
-                    <button class="cursor-pointer w-[5.67708333333vw] h-[2.23958333333vw]  md:leading-[1.14583333333vw]   md:text-[0.9375vw] mt-[10.3px]
-                    bg-[#A5A5A5]  rounded-[1.35416666667vw] text-[#FFFFFF] uppercase
+                    <button class="w-[96px] h-[36px] cursor-pointer md:w-[5.67708333333vw] md:h-[2.23958333333vw]  md:leading-[1.14583333333vw]   md:text-[0.9375vw] mt-[15px] md:mt-[10.3px]
+  border-[1px] border-[#000000]                  
+ rounded-[26px] md:rounded-[1.35416666667vw] text-[#000000] uppercase
                     hover:bg-[#B89535] transition-all duration-500       
                      font-[300]">SUBMIT</button>
                 </div>
             </div>
          </div>
          <div class="md:w-[59.375vw] tabs-content">
-            <div id="step1" class="content live tips flex flex-col gap-y-[1.58854166667vw]">
-        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Tips  Guidelines</h5>
+            <div id="step1" class="content live tips flex flex-col 
+gap-y-[16px] md:gap-y-[1.58854166667vw]">
+        <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Tips  Guidelines</h5>
         <div class="flex flex-col gap-y-[10px]">
-            <a href="" class="relative date-time py-[1.25vw] pl-[1.5625vw] pr-[3.125vw] rounded-[15px] flex justify-between">
-                <span class="button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw] capitalize flex w-full justify-between ">Welcome Pamphlet-Neom Community 1
+            <a href="" class="mx-[auto] md:mx-[unset] w-[85.645%] md:w-[unset] py-[16px] px-[16px] relative date-time md:py-[1.25vw] md:pl-[1.5625vw] md:pr-[3.125vw] rounded-[15px] flex justify-between">
+                <span class="text-[14px] leading-[20px] button md:leading-[1.71875vw] text-[#878787] md:text-[1.25vw] capitalize flex w-full justify-between ">Welcome Pamphlet-Neom Community 1
                     
-                    <span href="" class="flex items-center gap-x-[0.83333333333vw] j
-                    text-[#B89535]
-                    ">VIEW PDF
-                        <img src="./assests/images/icon/download.svg" alt="Download" class="md:w-[1.04166666667vw] md:h-[1.04166666667vw]">
+                    <span href="" class="flex items-center gap-x-[6px] md:gap-x-[0.83333333333vw] j
+                    text-[#B89535] whitespace-nowrap md:whitespace-normal
+                    w-[31%] md:w-[unset]">VIEW PDF
+                        <img src="./assests/images/icon/download.svg" alt="Download" class="w-[10px] h-[10px] md:w-[1.04166666667vw] md:h-[1.04166666667vw]">
                     </span>
                     </span>
             </a>
@@ -336,16 +347,16 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
         </div>
         
             </div>
-            <div id="step2" class="content  flex flex-col gap-y-[1.5625vw]">
-                <div class=" flex flex-col gap-y-[1.5625vw]">
+            <div id="step2" class="content  flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
+                <div class=" flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
                     <img src="./assests/images/accomodation/service detail/1.jpg" alt="" class="w-full md:h-[23.59375vw] object-cover
-                    rounded-[15px]">
-                    <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Unit Access Authorization</h5>
-                    <div class=" flex flex-col gap-y-[1.38020833333vw]">
+                    md:rounded-[15px]">
+                    <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Unit Access Authorization</h5>
+                    <div class="gap-y-[24px] w-[85.645%]  md:w-[unset] mx-[auto] md:mx-[unset] flex flex-col md:gap-y-[1.38020833333vw]">
                         <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]  
-                        font-[300] w-[52.5vw]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
+                        font-[300] md:w-[52.5vw] text-[14px] leading-[24px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
                         <a href="" class="hover:bg-[#B89535] md:text-[0.9375vw] md:leading-[1.14583333333vw]   transition-all duration-500
-                          w-[8.90625vw] text-center py-[0.546875vw]  bg-[#000000]  rounded-[1.35416666667vw] text-[#FFFFFF] font-[300]    ">REQUEST NOW</a>
+                          md:w-[8.90625vw] text-center md:py-[0.546875vw]  bg-[#000000]  md:rounded-[1.35416666667vw] text-[#FFFFFF] font-[300] text-[14px] leading-[17px]  py-[10px] rounded-[26px]">REQUEST NOW</a>
                     </div>
                 </div>
                  
@@ -353,30 +364,31 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
         
             </div>
             
-            <div id="step4" class="content  flex flex-col gap-y-[1.5625vw]">
-                <div class="flex flex-col gap-y-[1.5625vw]">
-                    <img src="./assests/images/accomodation/service detail/2.png" alt="" class="w-full md:h-[23.59375vw] object-cover
-                    rounded-[15px]">
-        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Request During Occupancy</h5>
-        <div class=" flex flex-col gap-y-[1.38020833333vw]">
-            <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]
-            font-[300]    w-[52.5vw]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
+            <div id="step4" class="content  flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
+                <div class=" flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
+                    <img src="./assests/images/accomodation/service detail/2.jpg" alt="" class="w-full md:h-[23.59375vw] object-cover
+                    md:rounded-[15px]">
+        <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Request During Occupancy</h5>
+        <div class="gap-y-[24px] w-[85.645%]  md:w-[unset] mx-[auto] md:mx-[unset] flex flex-col md:gap-y-[1.38020833333vw]">
+            <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]  
+                        font-[300] md:w-[52.5vw] text-[14px] leading-[24px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
             <a href="" class="hover:bg-[#B89535] md:text-[0.9375vw] md:leading-[1.14583333333vw]   transition-all duration-500
-              w-[8.90625vw] text-center py-[0.546875vw]  bg-[#000000]  rounded-[1.35416666667vw] text-[#FFFFFF]    ">REQUEST NOW</a>
+                          md:w-[8.90625vw] text-center md:py-[0.546875vw]  bg-[#000000]  md:rounded-[1.35416666667vw] text-[#FFFFFF] font-[300] text-[14px] leading-[17px]  py-[10px] rounded-[26px]">REQUEST NOW</a>
         </div>
                 </div>
         
             </div>
              
-            <div id="step5" class="content  flex flex-col gap-y-[1.5625vw]">
-                <div class="flex flex-col gap-y-[1.5625vw]">
+            <div id="step5" class="content  flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
+                <div class=" flex flex-col gap-y-[16px] md:gap-y-[1.5625vw]">
                     <img src="./assests/images/accomodation/service detail/4.jpg" alt="" class="w-full md:h-[23.59375vw] object-cover
-                    rounded-[15px]">
-        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Pets Application</h5>
-        <div class=" flex flex-col gap-y-[1.38020833333vw]">
-            <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]     w-[52.5vw]  font-[300]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
+                    md:rounded-[15px]">
+        <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw]"> Pets Application</h5>
+        <div class="gap-y-[24px] w-[85.645%]  md:w-[unset] mx-[auto] md:mx-[unset] flex flex-col md:gap-y-[1.38020833333vw]">
+            <p class="md:text-[0.9375vw] md:leading-[1.35416666667vw]  
+                        font-[300] md:w-[52.5vw] text-[14px] leading-[24px]">Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing</p>
             <a href="" class="hover:bg-[#B89535] md:text-[0.9375vw] md:leading-[1.14583333333vw]   transition-all duration-500
-              w-[8.90625vw] text-center py-[0.546875vw]  bg-[#000000]  rounded-[1.35416666667vw] text-[#FFFFFF]    ">REQUEST NOW</a>
+                          md:w-[8.90625vw] text-center md:py-[0.546875vw]  bg-[#000000]  md:rounded-[1.35416666667vw] text-[#FFFFFF] font-[300] text-[14px] leading-[17px]  py-[10px] rounded-[26px]">REQUEST NOW</a>
         </div>
                 </div>
                 
@@ -385,13 +397,14 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
              
             <div id="step7" class="content  ">
                 <div class="galleryOuterSection">
-                    <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Photo/Video Gallery</h5>
-                  <div class="flex justify-between w-[59.375vw]">
+                    <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw]">Photo/Video Gallery</h5>
+                  <div class="mx-[auto] md:mx-[unset] flex justify-between w-[85.645%] md:w-[59.375vw] flex-wrap">
                     <div class="cursor-pointer" onclick="openGallery()">
-                        <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
-                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
-                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[163px] h-[150px] md:w-[18.8932291667vw] md:h-[16.40625vw] object-cover cursor-pointer md:rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="mt-[8px] text-[16px] leading-[22px] text-[#000000] md:text-[1.25vw] md:leading-[1.71875vw] text-center md:mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="mt-[4px] flex gap-x-[0.3421875vw] justify-center md:mt-[0.41666666666vw] items-center">
+                            <svg class="w-[8.43px] h-[8.43px]
+                            md:w-[unset] md:h-[unset]" xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
                                 <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
                                   <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                                   <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
@@ -400,14 +413,15 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
                                 </g>
                               </svg>
                               
-                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                            <span class="text-[12px] leading-[15px] md:leading-[1.14583333333vw] md:text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
                         </div>
                        </div>
                     <div class="cursor-pointer" onclick="openGallery()">
-                        <img src="./assests/images/accomodation/service detail/photo-gallery/2.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
-                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
-                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/2.jpg" alt="" class="w-[163px] h-[150px] md:w-[18.8932291667vw] md:h-[16.40625vw] object-cover cursor-pointer md:rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="mt-[8px] text-[16px] leading-[22px] text-[#000000] md:text-[1.25vw] md:leading-[1.71875vw] text-center md:mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="mt-[4px] flex gap-x-[0.3421875vw] justify-center md:mt-[0.41666666666vw] items-center">
+                            <svg class="w-[8.43px] h-[8.43px]
+                            md:w-[unset] md:h-[unset]" xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
                                 <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
                                   <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                                   <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
@@ -416,14 +430,15 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
                                 </g>
                               </svg>
                               
-                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                            <span class="text-[12px] leading-[15px] md:leading-[1.14583333333vw] md:text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
                         </div>
                        </div>
                     <div class="cursor-pointer" onclick="openGallery()">
-                        <img src="./assests/images/accomodation/service detail/photo-gallery/3.jpg" alt="" class="w-[18.8932291667vw] h-[16.40625vw] object-cover cursor-pointer rounded-[0.78125vw]  mt-[1.5625vw]">
-                        <h4 class="text-[#000000] text-[1.25vw] leading-[1.71875vw] font-[500] text-center mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
-                        <div class="flex gap-x-[0.3421875vw] justify-center mt-[0.41666666666vw] items-center">
-                            <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
+                        <img src="./assests/images/accomodation/service detail/photo-gallery/3.jpg" alt="" class="w-[163px] h-[150px] md:w-[18.8932291667vw] md:h-[16.40625vw] object-cover cursor-pointer md:rounded-[0.78125vw]  mt-[1.5625vw]">
+                        <h4 class="mt-[8px] text-[16px] leading-[22px] text-[#000000] md:text-[1.25vw] md:leading-[1.71875vw] text-center md:mt-[0.83333333333vw]">Lorem Ipsum Dolor</h4>
+                        <div class="mt-[4px] flex gap-x-[0.3421875vw] justify-center md:mt-[0.41666666666vw] items-center">
+                            <svg class="w-[8.43px] h-[8.43px]
+                            md:w-[unset] md:h-[unset]" xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
                                 <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
                                   <path id="Path_11185" data-name="Path 11185" d="M5.882,6h9.671a1.382,1.382,0,0,1,1.382,1.382v9.671a1.382,1.382,0,0,1-1.382,1.382H5.882A1.382,1.382,0,0,1,4.5,17.053V7.382A1.382,1.382,0,0,1,5.882,6Z" transform="translate(-4.5 -4.618)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
                                   <path id="Path_11186" data-name="Path 11186" d="M24,3V5.763" transform="translate(-15.02 -3)" fill="none" stroke="#B89535" stroke-linecap="round" stroke-linejoin="round" stroke-width="1"></path>
@@ -432,24 +447,24 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
                                 </g>
                               </svg>
                               
-                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                            <span class="text-[12px] leading-[15px] md:leading-[1.14583333333vw] md:text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
                         </div>
                        </div>
                   </div>
                 </div>
-                <div  class="flex flex-col gap-y-[1.5625vw] hidden galleryInnerSection bg-[#F4F2ED] w-[59.6354166667vw] rounded-[0.78125vw] pl-[1.640625vw] py-[1.640625vw]">
-                    <div class="cursor-pointer " onclick="closeGallery()">
+                <div  class=" flex flex-col gap-y-[16px] md:gap-y-[1.5625vw] hidden galleryInnerSection bg-[#F4F2ED] md:w-[59.6354166667vw] md:rounded-[0.78125vw] md:pl-[1.640625vw] md:py-[1.640625vw]">
+                    <div class="pl-[24px] md:pl-[unset] cursor-pointer " onclick="closeGallery()">
                    
                         <span class=""> <svg id="service" class="w-[8px] h-[14px] transform rotate-[90deg] cursor-pointer ml-[8px] inline-block" xmlns="http://www.w3.org/2000/svg" width="10.042" height="6.077" viewBox="0 0 10.042 6.077">
                             <path id="Path_101295" data-name="Path 101295" d="M456.032,1780.9l4.19,4.419-4.5,4.581" transform="translate(1790.43 -455.186) rotate(90)" fill="none" stroke="#000" stroke-width="1.5"></path>
                         </svg></span>
-                        <span class="pl-[0.62395833333vw] text-[0.9375vw] leading-[1.14583333333vw] text-[#000000]">
+                        <span class="text-[14px] leading-[16px] md:pl-[0.62395833333vw] md:text-[0.9375vw] md:leading-[1.14583333333vw] text-[#000000]">
                             Back
                      
                          </span>
                     </div>
-                    <div class="flex justify-between items-center pr-[1.640625vw]">
-                        <h5 class="md:text-[1.66666666667vw] md:leading-[2.29166666667vw] text-[#000000]">Album Name 1</h5>
+                    <div class="flex justify-between items-center pr-[24px] md:pr-[1.640625vw]">
+                        <h5 class="ml-[28px] md:ml-[unset] text-[20px] leading-[27px] md:text-[1.66666666667vw] md:leading-[2.29166666667vw] text-[#000000]">Album Name 1</h5>
                         <div class="flex gap-x-[0.8vw]">
                             <svg xmlns="http://www.w3.org/2000/svg" width="13.434" height="14.816" viewBox="0 0 13.434 14.816">
                                 <g id="Icon_feather-calendar" data-name="Icon feather-calendar" transform="translate(0.5 0.5)" >
@@ -460,38 +475,38 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
                                 </g>
                               </svg>
                               
-                            <span class="leading-[1.14583333333vw] text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
+                            <span class="text-[10px] leading-[13px] md:leading-[1.14583333333vw] md:text-[0.9375vw] text-[#000000] font-[300]">Feb 27, 2023</span>
                         </div>
                     </div>
                 
-                <div class="  flex  flex-wrap gap-y-[0.9375vw] pr-[1.640625vw]  ">
+                <div class="  flex  flex-wrap gap-y-[8px] md:gap-y-[0.9375vw] md:pr-[1.640625vw]  ">
                 <a data-fslightbox="" href="./assests/images/accomodation/service detail/photo-gallery/1.jpg" class="w-full ">
-                    <img id="mainImg" src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full md:h-[26.0416666667vw]
-                    rounded-[15px]
+                    <img id="mainImg" src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-[342px] h-[158px] md:w-full md:h-[26.0416666667vw]
+                    rounded-[15px] mx-[auto] md:mx-[unset]
                     ">
                 </a>
                  
-                <div class="swiper gallerySwiper min-w-[58.9vw] px-[1.640625vw] relative left-[-1.640625vw]">
+                <div class="swiper gallerySwiper md:min-w-[58.9vw] md:px-[1.640625vw] relative left-[-1.640625vw]">
                     <div id="smImg-main"  class="swiper-wrapper">
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/2.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/3.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/4.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full object-cover h-full">
                         </div>
-                        <div id="smImg" class="swiper-slide w-[10.6041666667vw] h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
+                        <div id="smImg" class="w-[102px] h-[82px] swiper-slide md:w-[10.6041666667vw] md:h-[8.75vw] overflow-hidden rounded-[0.78125vw]">
                             <img src="./assests/images/accomodation/service detail/photo-gallery/1.jpg" alt="" class="w-full object-cover h-full">
                         </div>
                     </div>
@@ -525,9 +540,7 @@ md:w-[65.5208333333vw] font-[300] text-[#000000]
         </section>
         <section class="py-[7.34375vw]">
             <div class="w-[85.4166666667vw] mx-auto flex flex-col gap-y-[2.60416666667vw]">
-                <h4 class="md:text-[2.03125vw] md:leading-[2.76041666667vw]
-                tracking-[7.8px] 
-                ">CONTACT US</h4>
+                <h4 class="secondHeading">CONTACT US</h4>
                 <div class="  border-[0.5px] border-[#878787] rounded-[27px]">
         <div class="h-[3.125vw] bg-[#000000] flex rounded-tl-[13px] rounded-tr-[15px]">
             <div class="w-[17.0833333333vw] h-full flex justify-center items-center">

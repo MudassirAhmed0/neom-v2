@@ -14,6 +14,12 @@
     font-weight: 300;
     font-display: block;
 }
+@font-face {
+    font-family: "Brown";
+    src: url('../fonts/Brown\ Bold.ttf');
+    font-weight: 800;
+    font-display: block;
+}
 
 body{
     font-family: "Brown";
@@ -916,7 +922,6 @@ header nav ul li:hover > a,header nav ul li:hover svg path{
 }
 .answer.active{
     max-height: 200px;
-    padding-top: 1.04166666667vw;
     padding-bottom: 1.04166666667vw;
 }
  
@@ -1625,5 +1630,18 @@ left: 0 !important;
     }
     .event-detail .imgsde img{
         display: none;
+    }
+    .answer.active{
+        max-height: 200px;
+        padding-bottom: 16px;
+    }
+    .testimonialSwiper.swiper-horizontal.swiper-css-mode>.swiper-wrapper,
+    .testimonialSwiper.swiper-css-mode>.swiper-wrapper>.swiper-slide{
+        height: unset !important;
+        width: 298px!important;
+    }
+    .testimonialSwiper.swiper-css-mode>.swiper-wrapper>.swiper-slide{
+        flex-direction: column-reverse !important;
+        align-items: center !important;
     }
 }
