@@ -1291,6 +1291,14 @@ left: 0 !important;
 }
 
 @media (max-width:768px){
+    .teamPrevBtn,.teamNextBtn{
+        width: 8.20512820513vw;
+        height: 8.20512820513vw;
+    }
+    .active.teamSlide{
+        max-height: 59.7435897436vw;
+        min-width: 40.2564102564vw;
+        }
     .mobileContainer{
         width: 85.641025641vw;
     }
