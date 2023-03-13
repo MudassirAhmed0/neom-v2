@@ -1291,7 +1291,7 @@ left: 0 !important;
 }
 
 @media (max-width:768px){
-    .teamPrevBtn,.teamNextBtn{
+     .teamPrevBtn,.teamNextBtn{
         width: 8.20512820513vw;
         height: 8.20512820513vw;
     }
@@ -1651,5 +1651,17 @@ left: 0 !important;
     .testimonialSwiper.swiper-css-mode>.swiper-wrapper>.swiper-slide{
         flex-direction: column-reverse !important;
         align-items: center !important;
+    }
+    .objectTop{
+        object-position: 7px 8px;
+    }
+    .contact > div{
+        margin-left: unset;
+        margin-right: unset;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+    .contact > div :first-child{
+        justify-content: center;
     }
 }
